@@ -1,0 +1,13 @@
+.bookmarks{
+    position: absolute;
+    top: 80%;
+    right: 0px;
+    z-index: 10;
+    width: max-content;
+    background-color: #fff;
+    box-shadow: 0 0.8rem 5rem 2rem rgb(97 85 81 / 10%);
+    visibility: hidden; 
+    opacity: 0; 
+    transition: all 0.5s 0.2s
+}
+

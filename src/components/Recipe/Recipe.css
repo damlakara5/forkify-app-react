@@ -1,0 +1,103 @@
+.recipe{
+    background-color: #f9f5f3;
+}
+
+.recipe-detail_wrapper{
+    padding: 7.5rem 8rem 3.5rem 8rem;
+}
+
+.recipe-fig{
+    height: 32rem;
+    position: relative;
+}
+
+.recipe-fig::before{
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
+    opacity: 0.6
+}
+
+.recipe-img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.recipe-title{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 20%) skewY(-6deg);
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 50%;
+    line-height: 1.95;
+    text-align: center;
+}
+
+.recipe-title span{
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    padding: 1.3rem 2rem;
+    background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
+}
+
+.recipe-icon{
+    width: 3rem;
+    height: 3rem;
+    color: #f38e82;
+    font-weight: 700;
+}
+
+.recipe-icon::before{
+    font-size: 25px;
+}
+
+.bookmark-button{
+    background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    color: #fff;
+    width: 3rem;
+    height: 3rem;
+}
+
+.bookmark-button:hover{
+    transform: scale(1.07);
+}
+
+.bookmark-icon::before{
+    font-size: 20px;
+}
+
+.recipe-ingredients{
+    background-color: #f2efee;
+    padding: 50px 80px;
+}
+
+
+.recipe-ingredients_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem 3rem;
+    list-style: none;
+}
+
+.recipe-header{
+    color: #f38e82;
+    font-size: 20px;
+}
+
+.recipe-ingredients_list i{
+    color: #f38e82;
+}

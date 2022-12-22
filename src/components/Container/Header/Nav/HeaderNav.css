@@ -1,0 +1,29 @@
+.nav-item{
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.nav-item:hover{
+    background-color: #f2efee;
+}
+
+.nav-item__icon{
+    height: 24px;
+    width: 34px;
+    color: #f38e82 ;
+    font-weight: 700;
+}
+
+.nav-item__icon::before{
+    font-size: 23px;
+}
+
+.nav-item_bookmarks:hover ~ .bookmarks{
+    visibility: visible;
+    opacity: 1;
+}
+
+.btn-modal{
+    border: none;
+    background-color: transparent;
+}
