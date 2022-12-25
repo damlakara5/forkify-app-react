@@ -14,20 +14,20 @@ const Recipe = () => {
     const currentRecipe = useSelector(state => state.result.currentRecipeItem)
     const bookmarkedList = useSelector(state => state.result.bookmarked)
 
-    const [bookmarkIcon , setBookmarkIcon] = useState(false)
 
     const showedRecipe = currentRecipe && currentRecipe[0].recipe
 
 
     useEffect(()=> {
         dispatch(resultActions.renderRecipe(id))
+        dispatch(sendData(bookmarkedList , "bookmarks"))
     }, [dispatch, id, bookmarkedList, showedRecipe])
 
     
     const handleBookmark = () => {
         dispatch(resultActions.addBookmark())
-        dispatch(sendData(bookmarkedList , "bookmarks"))
-        setBookmarkIcon(!bookmarkIcon)
+        
+      
     }
   return (
     <div className='recipe h-100'>
@@ -41,7 +41,7 @@ const Recipe = () => {
                 <div className='d-flex recipe-detail_wrapper align-items-center'>
                     <RecipeDetails  text={`${showedRecipe.cooking_time} MINUTE`} iconName="bi-clock"  />
                     <RecipeDetails  text={`${showedRecipe.servings} Servings`} iconName="bi-people"  />
-                    <BookmarkButton  handleBookmark={handleBookmark} bookmarkIcon={bookmarkIcon} />
+                    <BookmarkButton  handleBookmark={handleBookmark}  />
                 </div>
                 <div className='recipe-ingredients'>
                     <h2 className='mx-auto recipe-header mb-4'>RECIPE INGREDIENTS</h2>

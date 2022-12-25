@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const BookmarkButton = ({handleBookmark, bookmarkIcon}) => {
+const BookmarkButton = ({handleBookmark}) => {
     
   return (
     <button className='bookmark-button d-flex align-items-center justify-content-center ms-auto'  onClick={handleBookmark}>

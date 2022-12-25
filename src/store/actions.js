@@ -38,7 +38,7 @@ export const sendData = (data, url) => {
         const response = await fetch(
           `https://forkify-app-f7969-default-rtdb.firebaseio.com/data/${url}.json`,
           {
-            method: 'POST',
+            method: 'PUT',
             body: JSON.stringify(data),
           }
         );

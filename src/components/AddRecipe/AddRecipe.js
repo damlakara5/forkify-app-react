@@ -24,7 +24,7 @@ const AddRecipe = () => {
                 "recipe": {"publisher":"BBC Good Food","ingredients":[{"quantity":4,"unit":"","description":"large pitta breads"},{"quantity":4,"unit":"tbsps","description":"tomato pure"},{"quantity":2,"unit":"tsps","description":"mixed herbs"},{"quantity":2,"unit":"","description":"tomatoes sliced"},{"quantity":6,"unit":"","description":"slices salami torn into small pieces"},{"quantity":50,"unit":"g","description":"cheddar grated"}],"source_url":"http://www.bbcgoodfood.com/recipes/1649634/pitta-pizzas","image_url":"http://forkify-api.herokuapp.com/images/1649634_MEDIUMd3fc.jpg","title":"Pitta pizzas","servings":4,"cooking_time":30,"id":"5ed6604591c37cdc054bc990"}}
             ] )
         
-        dispatch(sendData(requestData , "food"))
+      /*   dispatch(sendData(requestData , "food")) */
     }
     
   return (

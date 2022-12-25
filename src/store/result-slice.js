@@ -24,7 +24,6 @@ const resultSlice= createSlice({
         },
         addBookmark(state, action) {
             const currentRe = current(state.currentRecipeItem)[0].recipe
-          
             const isItemExist = current(state.bookmarked).find(item => item.recipe.id === currentRe.id)
         
             if(!isItemExist){
